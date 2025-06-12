@@ -1,0 +1,23 @@
+<?php
+
+session_start();
+
+?>
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exo 1 Session</title>
+</head>
+<body>
+    
+    <form action="nickname.php" method="post">
+     <label for="pseudo"> Choisissez votre pseudo</label>
+     <input type="text" id="pseudo" name="pseudo" required>
+     <button type="submit"> Envoyer </button>
+     <a href="logout.php">Déconnexion</a>
+    </form>
+    
+</body>
+</html>

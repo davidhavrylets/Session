@@ -1,0 +1,26 @@
+<?php
+session_start();
+?>
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WElcone</title>
+</head>
+<body>
+    
+    <h1>
+        <?php
+          if(isset($_SESSION['pseudo'])) {
+              echo "Bienvenue " . $_SESSION['pseudo'];
+          } else {
+              echo "Bienvenue invité";
+          }
+        ?>
+        
+        <a href="logout.php">Déconnexion</a>
+    </h1>
+    
+</body>
+</html>
